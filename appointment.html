@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dental Clinic - Book Appointment</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="appointment-container">
+    <h1>Book Your Appointment</h1>
+    <form id="appointmentForm">
+      <label for="date">Select Date:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="time">Select Time:</label>
+      <input type="time" id="time" name="time" required>
+
+      <label for="clinic">Select Clinic Location:</label>
+      <select id="clinic" name="clinic" required>
+        <option value="">Select a clinic</option>
+        <option value="main">Main Clinic</option>
+        <option value="downtown">Downtown Clinic</option>
+        <option value="suburb">Suburb Clinic</option>
+      </select>
+
+      <label for="concern">Describe Your Concern:</label>
+      <textarea id="concern" name="concern" rows="4" required></textarea>
+
+      <button type="submit">Book Appointment</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('appointmentForm').onsubmit = function(event) {
+      event.preventDefault(); // Prevent default form submission
+      alert('Appointment booked successfully!');
+      // Redirect to home page or further actions can be done here
+      window.location.href = 'home.html'; // Redirect to home page after booking
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dental Clinic - First Time Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="login-container">
+    <h1>Welcome to Our Dental Clinic</h1>
+    <p>Please fill in your details to create an account</p>
+
+    <!-- First-time login form -->
+    <form id="loginForm" onsubmit="welcomeUser(event)">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required>
+
+      <label for="mobile">Mobile Number:</label>
+      <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" placeholder="1234567890" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit">Register</button>
+    </form>
+
+    <!-- Welcome message that shows after submission -->
+    <div id="welcomeMessage" class="hidden">
+      <h2 id="welcomeText"></h2>
+    </div>
+  </div>
+
+  <script>
+    function welcomeUser(event) {
+      event.preventDefault();  // Prevent form submission to simulate the welcome message
+
+      // Retrieve user input
+      const name = document.getElementById('name').value;
+
+      // Update welcome message
+      const welcomeText = document.getElementById('welcomeText');
+      welcomeText.innerText = `Welcome, ${name}! Thank you for registering at our Dental Clinic.`;
+
+      // Show welcome message and hide the form
+      document.getElementById('loginForm').classList.add('hidden');
+      document.getElementById('welcomeMessage').classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>

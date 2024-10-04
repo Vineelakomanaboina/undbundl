@@ -1,0 +1,507 @@
+/* Styles for the first-time login form */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa;
+  }
+  
+  .login-container {
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #007bff;
+  }
+  
+  p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  label {
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #welcomeMessage h2 {
+    color: #28a745;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Mobile responsive design */
+  @media (max-width: 600px) {
+    .login-container {
+      margin: 20px;
+      padding: 20px;
+    }
+  }
+  
+  /* General styles for the home page */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  section {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  section h2 {
+    margin-bottom: 20px;
+  }
+  
+  #services, #doctors, #reviews, #appointment, #faq, #contact {
+    background-color: #f0f0f0;
+    margin-bottom: 20px;
+    padding: 40px 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  /* Footer styling */
+  footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Responsive design for home page */
+  @media (max-width: 768px) {
+    nav ul li {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    section {
+      padding: 20px;
+    }
+  }
+  /* Styles for the appointment page */
+.appointment-container {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #007bff;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  label {
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  input, select, textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Mobile responsive design */
+  @media (max-width: 600px) {
+    .appointment-container {
+      margin: 20px;
+      padding: 20px;
+    }
+  }
+/* Navigation Bar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8e5d1; /* Light background color */
+    border-bottom: 1px solid #ccc; /* Bottom border for separation */
+  }
+  
+  .navbar-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .brand-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d36e00; /* Orange color */
+  }
+  
+  .brand-type {
+    font-size: 14px;
+    color: #4d4d4d; /* Darker grey for the subtext */
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    display: flex; /* Ensure the menu items are displayed in a row */
+    gap: 20px; /* Space between menu items */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-menu li {
+    position: relative;
+  }
+  
+  .navbar-menu a {
+    text-decoration: none;
+    color: #4d4d4d; /* Dark grey color */
+    font-weight: 500;
+  }
+  
+  .navbar-menu a:hover {
+    color: #d36e00; /* Change color on hover */
+  }
+  
+  .navbar-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .btn-appointment {
+    background-color: #d36e00; /* Orange color for the button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .btn-appointment:hover {
+    background-color: #b85b00; /* Darker orange on hover */
+  }
+  
+  .help {
+    margin-left: 20px;
+    color: #4d4d4d; /* Dark grey color */
+    cursor: pointer;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 600px) {
+    .navbar {
+      flex-direction: column; /* Change to column layout on smaller screens */
+      align-items: flex-start;
+    }
+  
+    .navbar-menu {
+      flex-direction: row; /* Keep horizontal layout on larger screens */
+      gap: 10px;
+    }
+  
+    .btn-appointment {
+      width: 100%; /* Full-width button on mobile */
+    }
+  }
+  
+
+  /* Services Section Styles */
+.services {
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Light grey background for contrast */
+    text-align: center;
+  }
+  
+  .services h2 {
+    font-size: 28px;
+    color: #d36e00; /* Orange color for the heading */
+    margin-bottom: 20px;
+  }
+  
+  .services-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow boxes to wrap on smaller screens */
+    justify-content: center; /* Center align the boxes */
+    gap: 20px; /* Space between boxes */
+  }
+  
+  .service-box {
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    width: 200px; /* Fixed width for boxes */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    transition: transform 0.3s; /* Smooth transform on hover */
+    color: white; /* Text color for better contrast */
+  }
+  
+  /* Different background colors for each service box */
+  .service-box:nth-child(1) {
+    background-color: #3498db; /* Blue */
+  }
+  
+  .service-box:nth-child(2) {
+    background-color: #e67e22; /* Orange */
+  }
+  
+  .service-box:nth-child(3) {
+    background-color: #2ecc71; /* Green */
+  }
+  
+  .service-box:nth-child(4) {
+    background-color: #9b59b6; /* Purple */
+  }
+  
+  .service-box:nth-child(5) {
+    background-color: #e74c3c; /* Red */
+  }
+  
+  .service-box:nth-child(6) {
+    background-color: #34495e; /* Dark Blue */
+  }
+  
+  .service-box:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+  }
+  
+  .service-box h3 {
+    font-size: 20px;
+  }
+  
+  .service-box p {
+    font-size: 14px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 600px) {
+    .service-box {
+      width: 90%; /* Full-width on mobile */
+    }
+  }
+
+  
+  /* Doctors Section Styles */
+.doctors {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f2f2f2; /* Light background for contrast */
+  }
+  
+  .doctors h2 {
+    font-size: 28px;
+    color: #d36e00; /* Orange color for the heading */
+    margin-bottom: 20px;
+  }
+  
+  .doctors-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow boxes to wrap on smaller screens */
+    justify-content: center; /* Center align the boxes */
+    gap: 20px; /* Space between boxes */
+  }
+  
+  .doctor-box {
+    background-color: white; /* White background for boxes */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    width: 200px; /* Fixed width for boxes */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    transition: transform 0.3s; /* Smooth transform on hover */
+  }
+  
+  /* Updated doctor-box img styles */
+.doctor-box img {
+    width: 10%; /* Full width of the container */
+    height: 2px; /* Set a fixed height */
+    object-fit: cover; /* Ensures the image covers the area while maintaining aspect ratio */
+    border-radius: 10px; /* Rounded corners for the image */
+  }
+  
+  .doctor-box h3 {
+    font-size: 18px;
+    margin: 10px 0 5px; /* Spacing for name */
+  }
+  
+  .doctor-box p {
+    font-size: 14px;
+    color: #666; /* Grey color for degree text */
+  }
+  
+  /* Hover effect for doctor boxes */
+  .doctor-box:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 600px) {
+    .doctor-box {
+      width: 90%; /* Full-width on mobile */
+    }
+  }
+  
+  /* Patient Reviews Section */
+.patient-reviews {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9f9f9; /* Light background for contrast */
+  }
+  
+  .patient-reviews h2 {
+    font-size: 28px;
+    color: #d36e00; /* Orange color for heading */
+    margin-bottom: 20px;
+  }
+  
+  .reviews-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between review boxes */
+  }
+  
+  .review-box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .review-box p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #555; /* Dark grey for review text */
+  }
+  
+  .review-box h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  /* FAQ Section Styles */
+.faq {
+    padding: 40px 20px;
+    background-color: #fff;
+  }
+  
+  .faq h2 {
+    text-align: center;
+    color: #d36e00;
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  
+  .faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .faq-box {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .faq-box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .faq-box p {
+    font-size: 14px;
+    color: #666;
+  }
+  
